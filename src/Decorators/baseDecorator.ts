@@ -1,7 +1,7 @@
-export class BaseDecorator implements Ticket {
-  #ticket: Ticket
+export class BaseDecorator implements ITicket {
+  #ticket: ITicket
 
-  constructor(ticket: Ticket) {
+  constructor(ticket: ITicket) {
     this.#ticket = ticket
   }
 

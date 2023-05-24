@@ -6,14 +6,14 @@ import { ConcreteTicket } from "../Ticket/concreteTicket";
 describe('Test - LuggageDecorator', () => {
   let luggageDecorator: LuggageDecorator;
 
-  const concreteTicket: Ticket = new ConcreteTicket(mockedTicketInfo)
+  const concreteTicket: ITicket = new ConcreteTicket(mockedTicketInfo)
   const baseDecorator: BaseDecorator = new BaseDecorator(concreteTicket)
 
   beforeAll(() => {
-    luggageDecorator = new LuggageDecorator(baseDecorator)
+    luggageDecorator = new LuggageDecorator(baseDecorator, 1)
   });
 
-  test('GIVEN a LuggageDecorator, WHEN checkin is called THEN should add a new property', () => {
+  test('GIVEN a LuggageDecorator, WHEN checkin is called THEN should add selected luggage (1)', () => {
     expect(luggageDecorator.checkin()).toStrictEqual(mockedTicketInfoWithLuggage)
   });
 });

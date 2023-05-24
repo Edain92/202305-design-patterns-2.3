@@ -10,5 +10,5 @@ export const mockedTicketInfoWithLuggage = {
   origin: 'ORY',
   destination: 'HND',
   date: new Date('2023-12-21'),
-  luggageCount: 0
+  luggageCount: 1
 }

@@ -3,7 +3,7 @@ import { mockedTicketInfo } from "../../mocks/index";
 
 describe('Test - ConcreteTicket', () => {
 
-  let concreteTicket: Ticket;
+  let concreteTicket: ITicket;
 
   beforeAll(() => {
     concreteTicket = new ConcreteTicket(mockedTicketInfo);

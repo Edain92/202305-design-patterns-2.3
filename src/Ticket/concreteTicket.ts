@@ -1,12 +1,12 @@
-export class ConcreteTicket implements Ticket {
-  #ticket: TicketType
+export class ConcreteTicket implements ITicket {
+  ticket: Ticket
 
-  constructor(ticketData: { code: string, origin: string, destination: string, date: Date }) {
-    this.#ticket = ticketData
+  constructor(ticketData: Ticket) {
+    this.ticket = ticketData
   }
 
   checkin() {
-    return this.#ticket
+    return this.ticket
   }
 
 }

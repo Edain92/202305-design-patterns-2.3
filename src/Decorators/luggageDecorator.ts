@@ -1,20 +1,25 @@
 import { BaseDecorator } from "./baseDecorator";
 
 export class LuggageDecorator extends BaseDecorator {
+  #ticket: ITicket
   #decoratedTicket: Ticket
+  #luggage: number
 
-  constructor(ticket: Ticket) {
+  constructor(ticket: ITicket, luggage: number) {
     super(ticket)
-    this.#decoratedTicket = ticket
+
+    this.#ticket = ticket
+    this.#decoratedTicket = this.#ticket.checkin();
+    this.#luggage = luggage
   }
 
-  checkin(): TicketType {
+  checkin(): Ticket {
     this.#addLugagge()
 
-    return this.#decoratedTicket.checkin();
+    return this.#decoratedTicket
   }
 
   #addLugagge() {
-    this.#decoratedTicket.luggageCount = this.#decoratedTicket.luggageCount + 1;
+    this.#decoratedTicket.luggageCount = this.#luggage
   }
 }
