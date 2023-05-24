@@ -1,1 +1,3 @@
-export const hello = 'HELLO CONFIGS';
+class Client {
+
+}
