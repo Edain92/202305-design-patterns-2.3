@@ -1,5 +1,5 @@
 import { ConcreteTicket } from "../Ticket/concreteTicket";
-import { mockedTicketInfo } from "../../mocks/index";
+import { mockedTicketInfo } from "../mocks/index";
 
 describe('Test - ConcreteTicket', () => {
 

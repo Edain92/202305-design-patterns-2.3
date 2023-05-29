@@ -1,4 +1,4 @@
-import { mockedTicketInfo, mockedTicketInfoWithLuggage } from "../../mocks/index";
+import { mockedTicketInfo, mockedTicketInfoWithLuggage } from "../mocks/index";
 import { BaseDecorator } from "../Decorators/baseDecorator";
 import { LuggageDecorator } from "../Decorators/luggageDecorator";
 import { ConcreteTicket } from "../Ticket/concreteTicket";

@@ -1,5 +1,5 @@
 import { BaseDecorator } from "../Decorators/baseDecorator";
-import { mockedTicketInfo } from "../../mocks/index"
+import { mockedTicketInfo } from "../mocks/index"
 import { ConcreteTicket } from "../Ticket/concreteTicket";
 
 describe('Test - BaseDecorator', () => {
