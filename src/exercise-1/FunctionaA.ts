@@ -1,5 +1,7 @@
 export class FunctionA implements SystemFunction {
-  constructor() { }
+  constructor() {
+    // This is intentional
+  }
 
   doSomething(): string {
     return 'I\'m doing somenthing'
